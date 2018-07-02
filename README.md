@@ -5,7 +5,7 @@ A RESTful messageboard with Clojure--demo. Jaakko Saaristo 2014
 This creates a local web server into port 3000 that handles message objects with content (title, sender, content, url). You can:
 - PUT objects as JSON
 - GET objects as versions (short, full) and formats (JSON, XML)
-
+Fields are validated. URL needs to be a valid URL.
 
 ## Prerequisites
 
