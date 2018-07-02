@@ -1,6 +1,11 @@
 # messageboard
 
-A RESTful message board demo. (c) Jaakko Saaristo 2014
+A RESTful messageboard with Clojure--demo. Jaakko Saaristo 2014
+
+This creates a local web server into port 3000 that handles message objects with content (title, sender, content, url). You can:
+- PUT objects as JSON
+- GET objects as versions (short, full) and formats (JSON, XML)
+
 
 ## Prerequisites
 
@@ -11,7 +16,7 @@ A RESTful message board demo. (c) Jaakko Saaristo 2014
 
 ## Running
 
-To start a local Jetty web server (port 3000, context root = /) for the application, run:
+To start the application, run:
 
     lein clean      (only needed if you have created the WAR archive)
     lein ring server-headless
@@ -44,7 +49,4 @@ To create a WAR archive (into directory target, with default context root = arch
 
     lein spec
 
-## License
-
-Copyright © 2014 Jaakko Saaristo
 
